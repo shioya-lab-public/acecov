@@ -33,8 +33,9 @@ using namespace llvm;
 namespace Instrumentation
 {
 #define AFL_LLVM_PASS
-#include "../AFLplusplus/include/types.h"
-#include "../AFLplusplus/include/config.h"
+// include AFL++ header files
+#include "../../include/types.h"
+#include "../../include/config.h"
 
 	llvm::AllocaInst *create_alloca(llvm::Function *F, llvm::Type *Ty)
 	{

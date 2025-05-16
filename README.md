@@ -40,6 +40,9 @@ For detailed experimental data and results, please refer to the following reposi
 
 ## Scripts for Fuzzing Evaluation Frameworks
 AceCov provides scripts for integration with fuzzing evaluation frameworks such as [FuzzBench](https://github.com/google/fuzzbench) and [MAGMA](https://github.com/HexHive/magma). These scripts are available at:  
+[acecov_for_fuzzing_frameworks](https://github.com/shioya-lab-public/acecov_for_fuzzing_frameworks)
+
+The execution environments for FuzzBench and MAGMA used in the evaluation of AceCov are available in the following repository:
 [acecov_experiment](https://github.com/shioya-lab-public/acecov_experiment)
 
 ## License

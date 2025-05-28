@@ -12,7 +12,7 @@ plugin.so: plugin.o ir-parser.o graph-analyzer.o analyzer.o
 plugin.o: plugin.cpp
 	$(CXX) -c $(CLANG_CFL) -std=c++17 -fPIC -DDEBUG_LEVEL=${DEBUG_LEVEL} -DNO_DA -DDEBUG_PRINT=${DEBUG_PRINT} \
 		-DPRINT_THROUGH_COMBI=${PRINT_THROUGH_COMBI} -DWITHOUT_FUZZER=${WITHOUT_FUZZER} -DCOMBI_LIMIT=${COMBI_LIMIT} \
-		-DVERIFY_MODULE=${VERIFY_MODULE} -DPASS_REGISTER_EARLY=${PASS_REGISTER_EARLY} -DREG2MEM=${REG2MEM} pluginv2.cpp -o plugin.o
+		-DVERIFY_MODULE=${VERIFY_MODULE} -DPASS_REGISTER_EARLY=${PASS_REGISTER_EARLY} -DREG2MEM=${REG2MEM} plugin.cpp -o plugin.o
 graph-analyzer.o: graph-analyzer.cpp
 	$(CXX) -c $(CLANG_CFL) -std=c++17 $(CLANG_LFL) -fPIC -DDEBUG_LEVEL=${DEBUG_LEVEL} -DNO_DA -DMAX_DEPTH=${MAX_DEPTH} graph-analyzer.cpp
 ir-parser.o: ir-parser.cpp
